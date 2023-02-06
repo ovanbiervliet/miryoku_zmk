@@ -4,6 +4,20 @@
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 #define MIRYOKU_CLIPBOARD_MAC
 
+#define MIRYOKU_LAYER_LIST \
+MIRYOKU_X(BASE,   "Base") \
+MIRYOKU_X(NAV,    "Nav") \
+MIRYOKU_X(SYM,    "Sym") \
+MIRYOKU_X(NUM,    "Num") \
+MIRYOKU_X(SYS,    "Sys") \
+MIRYOKU_X(PTR,    "Ptr") \
+
+#define U_BASE   0
+#define U_NAV    1
+#define U_SYM    2
+#define U_NUM    3
+#define U_SYS    4
+#define U_PTR    5
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
