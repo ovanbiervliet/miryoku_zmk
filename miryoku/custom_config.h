@@ -27,7 +27,7 @@ MIRYOKU_X(MOUSE,  "Mouse")
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
 U_MT(LSHFT, A),    U_MT(LCTRL, R),    U_MT(LALT, S),     U_MT(LGUI, T),     &kp D,             &kp H,             U_MT(LGUI, N),     U_MT(LALT, E),     U_MT(LCTRL, I),    U_MT(LSHFT, O),    \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp K,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              U_LT(U_MOUSE, ESC),U_LT(U_NAV, SPC),  U_LT(U_NUM, TAB),  U_LT(U_FUN , BSPC), U_LT(U_SYM, RET), &kp DEL,           U_NP,              U_NP
+U_NP,              U_NP,              U_LT(U_NAV, ESC),U_LT(U_NUM, SPC),  U_LT(U_MOUSE, TAB),  U_LT(U_FUN, BSPC), U_LT(U_SYM, RET),  &kp DEL,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NAV \
 U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp LPAR,          &kp RPAR,          &kp MINUS,         &kp EQL,           \
@@ -43,15 +43,15 @@ U_NP,              U_NP,              &kp ESC,           &kp SPC,           &kp 
 
 #define MIRYOKU_LAYER_NUM \
 U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp NUM_7,         &kp NUM_8,         &kp NUM_9,         &kp BSPC,          \
-&kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          U_NA,              U_NA,              &kp NUM_4,         &kp NUM_5,         &kp NUM_6,         &kp SEMI,          \
+&kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          U_NA,              &u_caps_word,      &kp NUM_4,         &kp NUM_5,         &kp NUM_6,         &kp SEMI,          \
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         U_NA,              \
-U_NP,              &kp ESC,           U_NA,              U_NA,              U_NA,              U_NA,              &kp NUM_0,         &kp DOT,           U_NP,              U_NP
+U_NP,              U_NP,             U_NA,              U_NA,              U_NA,              U_NA,              &kp NUM_0,         &kp DOT,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_FUN \
 &kp F1,            &kp F2,            &kp F3,            &kp F4,            &u_bt_sel_0,       U_RGB_TOG,         U_RGB_EFF,         U_RGB_HUI,         U_RGB_SAI,         U_RGB_BRI,         \
 &kp F5,            &kp F6,            &kp F7,            &kp F8,            &u_bt_sel_1,       U_EP_TOG,          U_NA,              &kp C_PREV,        &kp C_PP,          &kp C_NEXT,        \
 &kp F9,            &kp F10,           &kp F11,           &kp F12,           &u_bt_sel_2,       U_NA,              &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_MUTE,        U_NA,              \
-U_NP,              U_NP,              U_NA,              U_NA,              &u_out_tog,        U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+U_NP,              U_NP,              &ext_power EP_ON,  U_NA,              &u_out_tog,        U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_MOUSE \
 U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R,            \
