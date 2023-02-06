@@ -46,7 +46,7 @@ U_NP,              &kp ESC,           U_NA,              U_NA,              U_NA
 #define MIRYOKU_LAYER_SYS \
 &kp F1,            &kp F2,            &kp F3,            &kp F4,            &u_bt_sel_0,       U_RGB_TOG,         U_RGB_EFF,         U_RGB_HUI,         U_RGB_SAI,         U_RGB_BRI,         \
 &kp F5,            &kp F6,            &kp F7,            &kp F8,            &u_bt_sel_1,       U_EP_TOG,          U_NA,              &kp C_PREV,        &kp C_PP           &kp C_NEXT,        \
-&kp F9,            &kp F10,           &kp F11,           &kp F12,           &u_bt_sel_2,       U_NA,              &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_MUTE,        U_NA               \
+&kp F9,            &kp F10,           &kp F11,           &kp F12,           &u_bt_sel_2,       U_NA,              &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_MUTE,        U_NA,              \
 U_NP,              U_NP,              U_NA,              U_NA,              &u_out_tog,        U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_PTR \
