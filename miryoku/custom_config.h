@@ -10,7 +10,7 @@ MIRYOKU_X(NAV,    "Nav") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYS,    "Sys") \
-MIRYOKU_X(PTR,    "Ptr") \
+MIRYOKU_X(PTR,    "Ptr")
 
 #define U_BASE   0
 #define U_NAV    1
@@ -18,6 +18,12 @@ MIRYOKU_X(PTR,    "Ptr") \
 #define U_NUM    3
 #define U_SYS    4
 #define U_PTR    5
+#define U_EXTRA  U_BASE
+#define U_TAP    U_BASE
+#define U_BUTTON U_BASE
+#define U_MOUSE  U_BASE
+#define U_MEDIA  U_BASE
+#define U_FUN    U_BASE
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
@@ -54,3 +60,4 @@ U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA
 &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          U_NA,              U_NA,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R,            \
 U_UND,             U_PST,             U_CPY,             U_CUT,             U_RDO,             U_NA,              U_BTN1,            U_BTN2,            U_NA,              U_NA,              \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+
