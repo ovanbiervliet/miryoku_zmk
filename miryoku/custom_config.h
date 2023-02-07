@@ -45,7 +45,7 @@ U_NP,              U_NP,              &kp ESC,           &kp SPC,           &kp 
 U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp NUM_7,         &kp NUM_8,         &kp NUM_9,         &kp BSPC,          \
 &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          U_NA,              &u_caps_word,      &kp NUM_4,         &kp NUM_5,         &kp NUM_6,         &kp SEMI,          \
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         U_NA,              \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              &kp NUM_0,         &kp DOT,           U_NP,              U_NP
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp BSPC,          &kp NUM_0,         &kp DOT,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_FUN \
 &kp F1,            &kp F2,            &kp F3,            &kp F4,            &u_bt_sel_0,       U_RGB_TOG,         U_RGB_EFF,         U_RGB_HUI,         U_RGB_SAI,         U_RGB_BRI,         \
