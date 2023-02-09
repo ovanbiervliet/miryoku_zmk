@@ -38,7 +38,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 #define MIRYOKU_LAYER_SYM \
 &kp EXCL,          &kp AT,            &kp HASH,          &kp PRCT,          &kp DLLR,          &kp CRRT,          &kp AMPS,          &kp ASTRK,         &kp MINUS,         &kp EQL,           \
 &kp LPAR,          &kp LT,            &kp GT,            &kp RPAR,          &kp LS(LA(NUM_2)), U_NA,              &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         \
-&kp LBKT,          &kp GRAVE,         &kp BSLH,          &kp RBKT,          &kp LA(NUM_3),     U_NA,              &kp MINUS,         &kp EQL,           LS(MINUS),         LS(EQL),           \
+&kp LBKT,          &kp GRAVE,         &kp BSLH,          &kp RBKT,          &kp LA(NUM_3),     U_NA,              &kp MINUS,         &kp EQL,           &kp LS(MINUS),     &kp LS(EQL),       \
 U_NP,              U_NP,              &kp ESC,           &kp SPC,           &kp TAB,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NUM \
