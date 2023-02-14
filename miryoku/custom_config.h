@@ -40,7 +40,7 @@ MIRYOKU_X(MOUSE,  "Mouse")
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
-U_MT(LSHFT, A),    U_MT(LCTRL, R),    U_MT(LALT, S),     U_MT(LGUI, T),     &kp D,             &kp H,             U_MT(LGUI, N),     U_MT(LALT, E),     U_MT(LCTRL, I),    U_MT(LSHFT, O),    \
+&qgt LSHFT A,      &qgt LCTRL R,      &qgt LALT S,       &qgt LGUI T,       &kp D,             &kp H,             &qgt LGUI N,       &qgt LALT E,       &qgt LCTRL I,      &qgt LSHFT O,      \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp K,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
 U_NP,              U_NP,              U_LT(U_NAV, ESC),U_LT(U_NUM, SPC),  U_LT(U_MOUSE, TAB),  U_LT(U_FUN, BSPC), U_LT(U_SYM, RET),  &kp DEL,           U_NP,              U_NP
 
