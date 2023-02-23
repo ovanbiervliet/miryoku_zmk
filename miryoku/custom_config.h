@@ -55,15 +55,15 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 #define MIRYOKU_LAYER_SYM \
 &kp EXCL,          &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCT,          &kp CRRT,          &kp AMPS,          &kp ASTRK,         &kp MINUS,         &kp EQL,           \
-&kp LPAR,          &kp LT,            &kp GT,            &kp RPAR,          &kp LS(LA(NUM_2)), U_NA,              &kp MINUS,         &kp EQL,           &kp SQT,           &kp SEMI,          \
-&kp LBKT,          &kp GRAVE,         &kp BSLH,          &kp RBKT,          &kp LA(NUM_3),     U_NA,              &kp MINUS,         &kp EQL,           &kp LS(MINUS),     &kp LS(EQL),       \
-U_NP,              U_NP,              &kp ESC,           &kp SPC,           &kp TAB,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+&kp LPAR,          &kp LBKT,          &kp RBKT,          &kp RPAR,          &kp LS(LA(NUM_2)), U_NA,              &kp MINUS,         &kp EQL,           &kp SQT,           &kp SEMI,          \
+&kp LT,            &kp GRAVE,         &kp BSLH,          &kp GT,            &kp LA(NUM_3),     U_NA,              &kp LS(MINUS),     &kp LS(EQL),       U_NA,              &key_repeat,       \
+U_NP,              U_NP,              &kp ESC,           &kp SPC,           &kp TAB,           &bootloader,       U_NA,              &reset,            U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NUM \
 U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp NUM_7,         &kp NUM_8,         &kp NUM_9,         &kp BSPC,          \
 &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          U_NA,              &u_caps_word,      &kp NUM_4,         &kp NUM_5,         &kp NUM_6,         &kp SEMI,          \
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         U_NA,              \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp BSPC,          &kp NUM_0,         &kp DOT,           U_NP,              U_NP
+U_NP,              U_NP,              &reset,            U_NA,              &bootloader,       &kp BSPC,          &kp NUM_0,         &kp DOT,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_FUN \
 &kp F1,            &kp F2,            &kp F3,            &kp F4,            &u_bt_sel_0,       U_RGB_TOG,         U_RGB_EFF,         U_RGB_HUI,         U_RGB_SAI,         U_RGB_BRI,         \
