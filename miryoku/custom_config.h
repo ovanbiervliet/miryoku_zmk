@@ -10,11 +10,11 @@
             compatible = "zmk,behavior-hold-tap";
             label = "GLOBAL_QUICK_TAP";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-//             flavor = "tap-preferred";
-//             tapping-term-ms = <200>;
+//            flavor = "tap-unless-interrupted";
+//            tapping-term-ms = <100>;
+//            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
             quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -55,7 +55,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 #define MIRYOKU_LAYER_SYM \
 &kp EXCL,          &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCT,          &kp CRRT,          &kp AMPS,          &kp ASTRK,         &kp MINUS,         &kp EQL,           \
-&kp LPAR,          &kp LT,            &kp GT,            &kp RPAR,          &kp LS(LA(NUM_2)), U_NA,              &kp MINUS,         &kp EQL,           &kp SEMI,          &kp SQT,           \
+&kp LPAR,          &kp LT,            &kp GT,            &kp RPAR,          &kp LS(LA(NUM_2)), U_NA,              &kp MINUS,         &kp EQL,           &kp SQT,           &kp SEMI,          \
 &kp LBKT,          &kp GRAVE,         &kp BSLH,          &kp RBKT,          &kp LA(NUM_3),     U_NA,              &kp MINUS,         &kp EQL,           &kp LS(MINUS),     &kp LS(EQL),       \
 U_NP,              U_NP,              &kp ESC,           &kp SPC,           &kp TAB,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
