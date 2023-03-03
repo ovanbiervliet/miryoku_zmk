@@ -55,8 +55,8 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 
 #define MIRYOKU_LAYER_SYM \
 &kp EXCL,          &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCT,          &kp CRRT,          &kp AMPS,          &kp ASTRK,         &kp MINUS,         &kp EQL,           \
-&kp LPAR,          &kp LBKT,          &kp RBKT,          &kp RPAR,          &kp LS(LA(NUM_2)), U_NA,              &kp MINUS,         &kp EQL,           &kp SQT,           &kp SEMI,          \
-&kp LT,            &kp GRAVE,         &kp BSLH,          &kp GT,            &kp LA(NUM_3),     U_NA,              &kp LS(MINUS),     &kp LS(EQL),       U_NA,              &key_repeat,       \
+&kp LPAR,          &kp LBKT,          &kp RBKT,          &kp RPAR,          &kp LS(LA(NUM_2)), &key_repeat,       &kp MINUS,         &kp EQL,           &kp SQT,           &kp SEMI,          \
+&kp LT,            &kp GRAVE,         &kp BSLH,          &kp GT,            &kp LA(NUM_3),     U_NA,              &kp LS(MINUS),     &kp LS(EQL),       &kp LS(SQT),       &kp LS(SEMI),      \
 U_NP,              U_NP,              &kp ESC,           &kp SPC,           &kp TAB,           &bootloader,       U_NA,              &reset,            U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NUM \
