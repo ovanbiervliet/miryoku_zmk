@@ -52,7 +52,7 @@ MIRYOKU_X(MOUSE,  "Mouse")
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
 &gmt LSHFT A,      &gmt LCTRL R,      &gmt LALT S,       &gmt LGUI T,       &kp D,             &kp H,             &gmt LGUI N,       &gmt LALT E,       &gmt LCTRL I,      &gmt LSHFT O,      \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp K,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              &glt U_NAV ESC,    &glt U_NUM SPC,    &glt U_MOUSE TAB,  &glt U_FUN BSPC,   &glt U_SYM RET,    &glt U_NAV DEL,    U_NP,              U_NP
+U_NP,              U_NP,              &glt U_NAV ESC,    &glt U_NUM SPACE,    &glt U_MOUSE TAB,  &glt U_FUN BSPC,   &glt U_SYM RET,    &glt U_NAV DEL,    U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NAV \
 U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp LPAR,          &kp RPAR,          &kp MINUS,         &kp EQL,           \
@@ -64,7 +64,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 &kp EXCL,          &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCT,          &kp CRRT,          &kp AMPS,          &kp ASTRK,         &kp MINUS,         &kp EQL,           \
 &kp LPAR,          &kp LBKT,          &kp RBKT,          &kp RPAR,          &kp LS(LA(NUM_2)), &key_repeat,       &kp MINUS,         &kp EQL,           &kp SQT,           &kp SEMI,          \
 &kp LT,            &kp GRAVE,         &kp BSLH,          &kp GT,            &kp LA(NUM_3),     U_NA,              &kp LS(MINUS),     &kp LS(EQL),       &kp LS(SQT),       &kp LS(SEMI),      \
-U_NP,              U_NP,              &kp ESC,           &kp SPC,           &kp TAB,           &bootloader,       U_NA,              &reset,            U_NP,              U_NP
+U_NP,              U_NP,              &kp ESC,           &kp SPACE,           &kp TAB,           &bootloader,       U_NA,              &reset,            U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NUM \
 U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp NUM_7,         &kp NUM_8,         &kp NUM_9,         &kp BSPC,          \
