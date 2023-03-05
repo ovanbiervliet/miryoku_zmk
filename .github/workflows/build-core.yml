@@ -2,7 +2,7 @@
 # https://github.com/manna-harbour/miryoku
 
 name: 'Build Core'
-on: workflow_dispatch
+on: push
 jobs:
   build:
     uses: ./.github/workflows/main.yml
