@@ -6,9 +6,9 @@
 
 / {
     behaviors {
-        gmt: global-quick-tap {
+        gmt: global-quick-mod-tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_QUICK_MOD_TAP";
+            label = "gmt";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
@@ -16,9 +16,9 @@
             global-quick-tap;
             bindings = <&mo>, <&kp>;
         };
-        glt: global-quick-tap {
+        glt: global-quick-layer-tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_QUICK_LAYER_TAP";
+            label = "glt";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
