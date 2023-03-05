@@ -6,18 +6,25 @@
 
 / {
     behaviors {
-        gqt: global-quick-tap {
+        glt: global-quick-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "GLOBAL_QUICK_TAP";
             #binding-cells = <2>;
-//            flavor = "tap-unless-interrupted";
-//            tapping-term-ms = <100>;
-//            quick-tap-ms = <200>;
             flavor = "tap-preferred";
-            tapping-term-ms = <180>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
+        };
+        gmt: global-quick-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GLOBAL_QUICK_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";ß
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&mo>, <&kp>;
         };
     };
 };
@@ -43,9 +50,9 @@ MIRYOKU_X(MOUSE,  "Mouse")
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
-&gqt LSHFT A,      &gqt LCTRL R,      &gqt LALT S,       &gqt LGUI T,       &kp D,             &kp H,             &gqt LGUI N,       &gqt LALT E,       &gqt LCTRL I,      &gqt LSHFT O,      \
+&gmt LSHFT A,      &gmt LCTRL R,      &gmt LALT S,       &gmt LGUI T,       &kp D,             &kp H,             &gmt LGUI N,       &gmt LALT E,       &gmt LCTRL I,      &gmt LSHFT O,      \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp K,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              U_LT(U_NAV, ESC),U_LT(U_NUM, SPC),  U_LT(U_MOUSE, TAB),  U_LT(U_FUN, BSPC), U_LT(U_SYM, RET),  &kp DEL,           U_NP,              U_NP
+U_NP,              U_NP,              &glt U_NAV ESC,    &glt U_NUM SPC,    &glt U_MOUSE TAB,  &glt U_FUN BSPC,   &glt U_SYM RET,    &glt U_NAV DEL,    U_NP,              U_NP
 
 #define MIRYOKU_LAYER_NAV \
 U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp LPAR,          &kp RPAR,          &kp MINUS,         &kp EQL,           \
