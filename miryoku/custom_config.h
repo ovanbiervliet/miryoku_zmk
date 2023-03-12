@@ -28,13 +28,17 @@
             };
         };
 
+        macros {
+            ij: ij {
+                label = "ij";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                wait-ms = <40>;
+                tap-ms = <40>;
+                bindings = <&kp I &kp J>;
+            };
+        };
     };
-
-    ZMK_MACRO(my_macro,
-        wait-ms = <40>;
-        tap-ms = <40>;
-        bindings = <&kp I &kp J>;
-    )
 
     #define MIRYOKU_LAYER_LIST \
     MIRYOKU_X(BASE,   "Base") \
