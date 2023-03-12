@@ -29,6 +29,14 @@
         };
     };
 
+    my_macro: my_macro {
+        compatible = "zmk,behavior-macro";
+        label = "ZM_my_macro";
+        #binding-cells = <0>;
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp Z &kp M &kp K>;
+    };
 
     //             ij: ij {
     //                 compatible = "zmk,behavior-macro";
@@ -60,7 +68,12 @@
     #define U_IJ \
     / { \
         macros { \
-            ZMK_MACRO(u_ij, wait-ms = <40>; tap-ms = <40>; bindings = <&kp I &kp J>;) \
+            ZMK_MACRO(
+                u_ij, \
+                wait-ms = <40>; \
+                tap-ms = <40>; \
+                bindings = <&kp I &kp J>; \
+            ) \
         }; \
     };
 
