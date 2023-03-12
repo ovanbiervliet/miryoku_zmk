@@ -27,19 +27,12 @@
                 bindings = <&mo>, <&kp>;
             };
         };
-    };
 
-    / {
-        macros {
-            ij: ij {
-                label = "ij";
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings
-                    = <&macro_tap &kp I &kp J>
-                    ;
-            };
-        };
+        ZMK_MACRO(my_macro,
+                wait-ms = <40>;
+                tap-ms = <40>;
+                bindings = <&kp I &kp J>;
+        )
     };
 
     #define MIRYOKU_LAYER_LIST \
@@ -65,7 +58,7 @@
     &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
     &gmt LSHFT A,      &gmt LCTRL R,      &gmt LALT S,       &gmt LGUI T,       &kp D,             &kp H,             &gmt LGUI N,       &gmt LALT E,       &gmt LCTRL I,      &gmt LSHFT O,      \
     &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp K,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-    U_NP,              U_NP,              &glt U_NAV ESC,    &kp SPACE,         &glt U_NUM TAB,    &glt U_SYM BSPC,   &glt U_NAV RET,    &kp DEL,          U_NP,              U_NP
+    U_NP,              U_NP,              &glt U_NAV ESC,    &kp SPACE,         &glt U_NUM TAB,    &glt U_SYM BSPC,   &glt U_NAV RET,    &kp DEL,           U_NP,              U_NP
 
     #define MIRYOKU_LAYER_NAV \
     U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,              U_WH_U,            U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R,            \
