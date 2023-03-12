@@ -29,15 +29,6 @@
         };
     };
 
-    my_macro: my_macro {
-        compatible = "zmk,behavior-macro";
-        label = "ZM_my_macro";
-        #binding-cells = <0>;
-        wait-ms = <30>;
-        tap-ms = <40>;
-        bindings = <&kp Z &kp M &kp K>;
-    };
-
     //             ij: ij {
     //                 compatible = "zmk,behavior-macro";
     //                 label = "ij";
@@ -68,14 +59,9 @@
     #define U_IJ \
     / { \
         macros { \
-            ZMK_MACRO(
-                u_ij, \
-                wait-ms = <40>; \
-                tap-ms = <40>; \
-                bindings = <&kp I &kp J>; \
-            ) \
+            ZMK_MACRO(u_ij, wait-ms = <40>; tap-ms = <40>; bindings = <&kp I &kp J>; ) \
         }; \
-    };
+    }; \
 
     #define MIRYOKU_LAYER_BASE \
     &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
