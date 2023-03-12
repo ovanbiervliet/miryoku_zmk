@@ -29,6 +29,19 @@
         };
     };
 
+    / {
+        macros {
+            ij: ij {
+                label = "ij";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_tap &kp I &kp J>
+                    ;
+            };
+        };
+    };
+
     #define MIRYOKU_LAYER_LIST \
     MIRYOKU_X(BASE,   "Base") \
     MIRYOKU_X(NAV,    "Nav") \
@@ -52,19 +65,19 @@
     &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
     &gmt LSHFT A,      &gmt LCTRL R,      &gmt LALT S,       &gmt LGUI T,       &kp D,             &kp H,             &gmt LGUI N,       &gmt LALT E,       &gmt LCTRL I,      &gmt LSHFT O,      \
     &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp K,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-    U_NP,              U_NP,              &glt U_NAV ESC,    &glt U_NUM SPACE,    &glt U_MOUSE TAB,  &glt U_FUN BSPC,   &glt U_SYM RET,    &glt U_NAV DEL,    U_NP,              U_NP
+    U_NP,              U_NP,              &glt U_NAV ESC,    &kp SPACE,         &glt U_NUM TAB,    &glt U_SYM BSPC,   &glt U_NAV RET,    &kp DEL,          U_NP,              U_NP
 
     #define MIRYOKU_LAYER_NAV \
-    U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp LPAR,          &kp RPAR,          &kp MINUS,         &kp EQL,           \
-    &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          U_NA,              &u_caps_word,      &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         \
-    U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp INS,           &kp HOME,          &kp PG_DN,         &kp PG_UP,         &kp END,           \
-    U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp BSPC,          &kp RET,           &kp DEL,           U_NP,              U_NP
+    U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,              U_WH_U,            U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R,            \
+    &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          U_NA,              U_WH_D,            &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         \
+    U_NA,              U_NA,              U_BTN2,            U_BTN1,            U_NA,              &kp INS,           &kp HOME,          &kp PG_DN,         &kp PG_UP,         &kp END,           \
+    U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp BSPC,          &kp RET,           &u_caps_word,      U_NP,              U_NP
 
     #define MIRYOKU_LAYER_SYM \
     &kp EXCL,          &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCT,          &kp CRRT,          &kp AMPS,          &kp ASTRK,         &kp MINUS,         &kp EQL,           \
-    &kp LPAR,          &kp LBKT,          &kp RBKT,          &kp RPAR,          &kp LS(LA(NUM_2)), &key_repeat,       &kp MINUS,         &kp EQL,           &kp SQT,           &kp SEMI,          \
-    &kp LT,            &kp GRAVE,         &kp BSLH,          &kp GT,            &kp LA(NUM_3),     U_NA,              &kp LS(MINUS),     &kp LS(EQL),       &kp LS(SQT),       &kp LS(SEMI),      \
-    U_NP,              U_NP,              &kp ESC,           &kp SPACE,           &kp TAB,           &bootloader,       U_NA,              &reset,            U_NP,              U_NP
+    &kp LPAR,          &kp LBKT,          &kp RBKT,          &kp RPAR,          &kp LS(LA(NUM_2)), &key_repeat,       &gmt LGUI MINUS,   &gmt LALT EQL,     &gmt LCTRL &ij,    &gmt LSHFT SEMI,   \
+    &kp LT,            &kp GRAVE,         &kp BSLH,          &kp GT,            &kp LA(NUM_3),     U_NA,              &kp C_PP,          &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_MUTE,        \
+    U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,           &bootloader,       U_NA,              &reset,            U_NP,              U_NP
 
     #define MIRYOKU_LAYER_NUM \
     U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp NUM_7,         &kp NUM_8,         &kp NUM_9,         &kp BSPC,          \
@@ -82,6 +95,6 @@
     U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R,            \
     &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          U_NA,              U_NA,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R,            \
     U_UND,             U_PST,             U_CPY,             U_CUT,             U_RDO,             U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
-    U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_BTN1,            U_BTN2,            U_BTN3,              U_NP
+    U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_BTN1,            U_BTN2,            U_BTN3,            U_NP
 
 
