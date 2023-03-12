@@ -27,9 +27,14 @@
                 bindings = <&mo>, <&kp>;
             };
         };
+    };
 
+#define U_IJ \
+/ { \
         macros {
             ZMK_MACRO(u_ij, wait-ms = <40>; tap-ms = <40>; bindings = <&kp I &kp J>;)
+        };
+    };
 
 //             ij: ij {
 //                 compatible = "zmk,behavior-macro";
