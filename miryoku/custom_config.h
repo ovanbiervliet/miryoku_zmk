@@ -58,7 +58,7 @@
     &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,                         &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
     &gmt LSHFT A,      &gmt LCTRL R,      &gmt LALT S,       &gmt LGUI T,       &kp D,                         &kp H,             &gmt LGUI N,       &gmt LALT E,       &gmt LCTRL I,      &gmt LSHFT O,      \
     &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,                         &kp K,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-    U_NP,              U_NP,              &glt U_NAV ESC,    &glt U_NUM TAB,    &kp SPACE,                     &glt U_NAV BSPC,   &glt U_SYM RET,    &kp DEL,           U_NP,              U_NP
+    U_NP,              U_NP,              &glt U_NAV ESC,    &kp SPACE,         &glt U_NUM TAB,                &glt U_NAV BSPC,   &glt U_SYM RET,    &kp DEL,           U_NP,              U_NP
 
 
     #define MIRYOKU_LAYER_NAV \
