@@ -57,12 +57,13 @@
     #define U_TAP    U_BASE
     #define U_BUTTON U_BASE
     #define U_MEDIA  U_BASE
-//     #define U_IJ \
-//     / { \
-//         macros { \
-//             ZMK_MACRO(u_ij, wait-ms = <40>; tap-ms = <40>; bindings = <&kp I &kp J>; ) \
-//         }; \
-//     }; \
+
+ZMK_BEHAVIOR(u_ij, macro,
+    wait-ms = <20>;
+    tap-ms = <20>;
+    bindings = <&kp I &kp J>;
+)
+
 
     #define MIRYOKU_LAYER_BASE \
     &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,                         &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
@@ -80,7 +81,7 @@
 
     #define MIRYOKU_LAYER_SYM \
     &kp EXCL,          &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCT,                      &kp CRRT,          &kp AMPS,          &kp ASTRK,         &kp MINUS,         &kp EQL,           \
-    &kp LPAR,          &kp LBKT,          &kp RBKT,          &kp RPAR,          &kp LS(LA(NUM_2)),             &key_repeat,       &gmt LGUI MINUS,   &gmt LALT EQL,     &gmt LCTRL J,      &gmt LSHFT SEMI,   \
+    &kp LPAR,          &kp LBKT,          &kp RBKT,          &kp RPAR,          &kp LS(LA(NUM_2)),             &key_repeat,       &gmt LGUI MINUS,   &gmt LALT EQL,     &gmt LCTRL u_ij,   &gmt LSHFT SEMI,   \
     &kp LT,            &kp GRAVE,         &kp BSLH,          &kp GT,            &kp LA(NUM_3),                 U_NA,              &kp C_PP,          &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_MUTE,        \
     U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,                       U_NA,              &bootloader,       &reset,            U_NP,              U_NP
 
