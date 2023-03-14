@@ -29,13 +29,6 @@
         };
     };
 
-    #define U_IJ \
-    / { \
-      macros { \
-        ZMK_MACRO(u_ij, wait-ms = <20>; tap-ms = <20>; bindings = <&kp I &kp J>;) \
-      }; \
-    };
-
     #define MIRYOKU_LAYER_LIST \
     MIRYOKU_X(BASE,   "Base") \
     MIRYOKU_X(NAV,    "Nav") \
@@ -54,6 +47,13 @@
     #define U_TAP    U_BASE
     #define U_BUTTON U_BASE
     #define U_MEDIA  U_BASE
+
+    #define U_IJ \
+    / { \
+      macros { \
+        ZMK_MACRO(u_ij, wait-ms = <20>; tap-ms = <20>; bindings = <&kp I &kp J>;) \
+      }; \
+    };
 
 
     #define MIRYOKU_LAYER_BASE \
