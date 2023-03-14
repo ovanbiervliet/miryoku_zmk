@@ -27,6 +27,16 @@
                 bindings = <&mo>, <&kp>;
             };
         };
+
+        macros {
+            u_ij: u_ij {
+                compatible = "zmk,behavior-macro";
+                label = "ZM_u_ij";
+                wait-ms = <40>;
+                tap-ms = <40>;
+                bindings = <&kp I &kp J>;
+            };
+         };
     };
 
     #define MIRYOKU_LAYER_LIST \
