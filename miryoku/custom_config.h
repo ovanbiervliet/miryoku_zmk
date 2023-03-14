@@ -58,11 +58,13 @@
     #define U_BUTTON U_BASE
     #define U_MEDIA  U_BASE
 
+/ {
 ZMK_BEHAVIOR(u_ij, macro,
     wait-ms = <20>;
     tap-ms = <20>;
     bindings = <&kp I &kp J>;
 )
+};
 
 
     #define MIRYOKU_LAYER_BASE \
