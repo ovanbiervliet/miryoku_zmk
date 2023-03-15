@@ -48,19 +48,19 @@
     #define U_BUTTON U_BASE
     #define U_MEDIA  U_BASE
 
-    #define U_IJ \
-    / { \
-      macros { \
-        ZMK_MACRO(u_ij, wait-ms = <20>; tap-ms = <20>; bindings = <&kp I &kp J>;) \
-      }; \
-    };
+//     #define U_IJ \
+//     / { \
+//       macros { \
+//         ZMK_MACRO(u_ij, wait-ms = <20>; tap-ms = <20>; bindings = <&kp I &kp J>;) \
+//       }; \
+//     };
 
 
     #define MIRYOKU_LAYER_BASE \
     &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,                         &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
     &gmt LSHFT A,      &gmt LCTRL R,      &gmt LALT S,       &gmt LGUI T,       &kp D,                         &kp H,             &gmt LGUI N,       &gmt LALT E,       &gmt LCTRL I,      &gmt LSHFT O,      \
     &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,                         &kp K,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-    U_NP,              U_NP,              &glt U_NAV ESC,    &kp SPACE,         &glt U_NUM TAB,                &glt U_SYM BSPC,   &glt U_NAV RET,    &kp DEL,           U_NP,              U_NP
+    U_NP,              U_NP,              &glt U_NAV ESC,    &glt U_NUM SPACE,  &kp TAB,                       &kp BSPC,          &glt U_SYM RET,    &kp DEL,           U_NP,              U_NP
 
 
     #define MIRYOKU_LAYER_NAV \
@@ -72,8 +72,8 @@
 
     #define MIRYOKU_LAYER_SYM \
     &kp EXCL,          &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCT,                      &kp CRRT,          &kp AMPS,          &kp ASTRK,         &kp MINUS,         &kp EQL,           \
-    &kp LPAR,          &kp LBKT,          &kp RBKT,          &kp RPAR,          &kp LS(LA(NUM_2)),             &key_repeat,       &gmt LGUI MINUS,   &gmt LALT EQL,     &gmt LCTRL U_IJ,   &gmt LSHFT SEMI,   \
-    &kp LT,            &kp GRAVE,         &kp BSLH,          &kp GT,            &kp LA(NUM_3),                 U_NA,              &kp C_PP,          &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_MUTE,        \
+    &kp LPAR,          &kp LBKT,          &kp RBKT,          &kp RPAR,          &kp LS(LA(NUM_2)),             &key_repeat,       &gmt LGUI LEFT,    &gmt LALT DOWN,    &gmt LCTRL UP,     &gmt LSHFT RIGHT,  \
+    &kp LT,            &kp GRAVE,         &kp BSLH,          &kp GT,            &kp LA(NUM_3),                 U_NA,              &kp MINUS,         &kp EQL,           &kp J,             &kp SEMI,          \
     U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,                       U_NA,              &bootloader,       &reset,            U_NP,              U_NP
 
 
