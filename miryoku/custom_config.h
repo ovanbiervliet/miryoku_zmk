@@ -11,8 +11,8 @@
                 label = "gmt";
                 #binding-cells = <2>;
                 flavor = "tap-preferred";
-                tapping-term-ms = <200>;
-                quick-tap-ms = <150>;
+                tapping-term-ms = <180>;
+                quick-tap-ms = <120>;
                 global-quick-tap;
                 bindings = <&kp>, <&kp>;
             };
@@ -60,7 +60,7 @@
     &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,                         &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
     &gmt LSHFT A,      &gmt LCTRL R,      &gmt LALT S,       &gmt LGUI T,       &kp D,                         &kp H,             &gmt LGUI N,       &gmt LALT E,       &gmt LCTRL I,      &gmt LSHFT O,      \
     &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,                         &kp K,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-    U_NP,              U_NP,              &glt U_NAV ESC,    &glt U_NUM SPACE,  &kp TAB,                       &kp BSPC,          &glt U_SYM RET,    &kp DEL,           U_NP,              U_NP
+    U_NP,              U_NP,              &glt U_NAV ESC,    &glt U_SYM SPACE,  &glt U_NUM TAB,                &glt U_NUM BSPC,   &glt U_SYM RET,    &glt U_NAV DEL,           U_NP,              U_NP
 
 
     #define MIRYOKU_LAYER_NAV \
@@ -81,7 +81,7 @@
     U_BOOT,            U_NA,              U_NA,              U_NA,              U_NA,                          U_NA,              &kp NUM_7,         &kp NUM_8,         &kp NUM_9,         &kp BSPC,          \
     &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          U_NA,                          &u_caps_word,      &kp NUM_4,         &kp NUM_5,         &kp NUM_6,         &kp SEMI,          \
     U_NA,              U_NA,              U_NA,              U_NA,              U_NA,                          U_NA,              &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         U_NA,              \
-    U_NP,              U_NP,              &reset,            &bootloader,       U_NA,                          &kp BSPC,          &kp NUM_0,         &kp DOT,           U_NP,              U_NP
+    U_NP,              U_NP,              &reset,            &bootloader,       U_NA,                          &kp COMMA,         &kp NUM_0,         &kp DOT,           U_NP,              U_NP
 
 
     #define MIRYOKU_LAYER_FUN \
