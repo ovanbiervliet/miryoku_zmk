@@ -73,7 +73,7 @@
     #define MIRYOKU_LAYER_SYM \
     &kp EXCL,          &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCT,                      &kp CRRT,          &kp AMPS,          &kp ASTRK,         &kp MINUS,         &kp EQL,           \
     &kp LPAR,          &kp LBKT,          &kp RBKT,          &kp RPAR,          &kp LS(LA(NUM_2)),             &u_caps_word,      &gmt LGUI LEFT,    &gmt LALT DOWN,    &gmt LCTRL UP,     &gmt LSHFT RIGHT,  \
-    &kp LT,            &kp GRAVE,         &kp BSLH,          &kp GT,            &kp LA(NUM_3),                 &key_repeat,       &kp MINUS,         &kp EQL,           &kp J,             &kp SEMI,          \
+    &kp LT,            &kp GRAVE,         &kp BSLH,          &kp GT,            &kp LA(NUM_3),                 &key_repeat,       &kp MINUS,         &kp EQL,           &kp LS(SEMI),      &kp SEMI,          \
     U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,                       U_NA,              U_NA,              U_NA,
 
     U_NP,              U_NP
