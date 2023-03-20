@@ -11,8 +11,8 @@
                 label = "gmt";
                 #binding-cells = <2>;
                 flavor = "tap-preferred";
-                tapping-term-ms = <180>;
-                quick-tap-ms = <120>;
+                tapping-term-ms = <200>;
+                quick-tap-ms = <150>;
                 global-quick-tap;
                 bindings = <&kp>, <&kp>;
             };
@@ -74,9 +74,7 @@
     &kp EXCL,          &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCT,                      &kp CRRT,          &kp AMPS,          &kp ASTRK,         &kp MINUS,         &kp EQL,           \
     &kp LPAR,          &kp LBKT,          &kp RBKT,          &kp RPAR,          &kp LS(LA(NUM_2)),             &u_caps_word,      &gmt LGUI LEFT,    &gmt LALT DOWN,    &gmt LCTRL UP,     &gmt LSHFT RIGHT,  \
     &kp LT,            &kp GRAVE,         &kp BSLH,          &kp GT,            &kp LA(NUM_3),                 &key_repeat,       &kp MINUS,         &kp EQL,           &kp LS(SEMI),      &kp SEMI,          \
-    U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,                       U_NA,              U_NA,              U_NA,
-
-    U_NP,              U_NP
+    U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,                       U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 
     #define MIRYOKU_LAYER_NUM \
