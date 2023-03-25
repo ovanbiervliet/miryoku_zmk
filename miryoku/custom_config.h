@@ -1,6 +1,16 @@
     // Copyright 2021 Manna Harbour
     // https://github.com/manna-harbour/miryoku
 
+    # Set deep sleep to 30 minutes
+    CONFIG_ZMK_SLEEP=y
+    CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000
+
+    # Make Bluetooth stronger
+    CONFIG_BT_CTLR_TX_PWR_PLUS_8=y
+
+    # Change board name
+    CONFIG_ZMK_KEYBOARD_NAME="Core Nano"
+
     #define MIRYOKU_KLUDGE_MOUSEKEYSPR
     #define MIRYOKU_CLIPBOARD_MAC
 
